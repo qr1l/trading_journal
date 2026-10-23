@@ -1,0 +1,26 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--content-max-width);
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: var(--bg);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: calc(20px + env(safe-area-inset-bottom));
+}
+
+.withNav {
+  padding-bottom: calc(var(--nav-height) + 28px + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 680px) {
+  .shell {
+    border-inline: 1px solid var(--border);
+  }
+}

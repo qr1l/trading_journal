@@ -1,0 +1,139 @@
+# ─────────────────────────────────────────────────────────────
+# Торговый журнал — что не должно попадать в git
+# ─────────────────────────────────────────────────────────────
+
+# --- Зависимости и артефакты сборки ---------------------------
+node_modules/
+dist/
+dist-ssr/
+build/
+out/
+coverage/
+.vite/
+.turbo/
+.next/
+.cache/
+
+# Кеши инструментов и результаты инкрементальной сборки
+*.tsbuildinfo
+.eslintcache
+.oxlintcache
+.stylelintcache
+.pnpm-store/
+.npm/
+
+# --- Логи и отчёты --------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.cpuprofile
+*.heapsnapshot
+report.*.json
+playwright-report/
+test-results/
+
+# --- Секреты и локальная конфигурация -------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+.npmrc
+.npmrc.*
+.netrc
+secrets/
+secrets.*
+*.secret
+*.secret.*
+credentials.json
+service-account*.json
+
+# Локальные настройки проекта (могут содержать токены и пути)
+*.local
+*.local.*
+local.settings.json
+
+# --- ОС и редакторы -------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+.history/
+
+# --- OpenCode и ИИ-инструменты --------------------------------
+# Рабочая папка OpenCode: временные файлы, сессии, локальные настройки
+.opencode/
+
+# Конфигурация OpenCode в корне проекта
+opencode.json
+opencode.jsonc
+opencode.json.*
+.opencode.json
+.opencode.jsonc
+
+# MCP-конфигурация (может содержать токены доступа)
+.mcp.json
+mcp.json
+
+# Агенты, скиллы и правила, специфичные для локальной машины
+.agents/
+.agent/
+.skills/
+.agent-skills/
+
+# Прочие ИИ-ассистенты и их локальные правила
+.claude/
+.cursor/
+.aider*
+.clinerules*
+.windsurfrules*
+.copilot/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+
+# --- Документация проекта -------------------------------------
+# По требованию: папка docs не версионируется
+docs/
+
+# --- Временные файлы и мусор ----------------------------------
+tmp/
+temp/
+.tmp/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*~
+
+# Python (если рядом появятся скрипты проверки)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
